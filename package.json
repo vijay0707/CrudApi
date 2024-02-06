@@ -1,0 +1,24 @@
+{
+  "name": "crudjs",
+  "version": "1.0.0",
+  "description": "Crud application for employee details using Node Js and Mongo DB.",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dprakash2101/CrudJS.git"
+  },
+  "author": "Vijay Saran",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "mongodb": "^6.3.0",
+    "mongoose": "^8.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "3.0.3"
+  }
+}
