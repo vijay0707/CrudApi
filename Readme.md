@@ -72,7 +72,3 @@ nodemon start
 ## License
 This project is licensed under the MIT License.
 
-## Author
-
-- **Devi Prakash**
-  - GitHub: [dprakash2101](https://github.com/dprakash2101)
