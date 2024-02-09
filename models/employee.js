@@ -19,14 +19,14 @@ const employeeSchema = new mongoose.Schema({
         required: true,
     },
 
-    bloodgroup :{
+    bloodgroup: {
         type: String,
         required: true,
     },
-    
+
     experience: {
         type: Number,
         required: true,
     }
 });
-module.exports = mongoose.model('Employee',employeeSchema)
+module.exports = mongoose.model('Employee', employeeSchema)

@@ -1,18 +1,22 @@
 const express = require('express')
+const dotenv = require('dotenv')
 const cors = require('cors')
 const { default: mongoose } = require('mongoose')
 const mangoose = require('mongoose')
-const url = 'mongodb://localhost:27017/Employee' 
-const app= express()
-mongoose.connect(url,{useNewUrlParser:true})
+dotenv.config()
+
+const url = process.env.MONGO_URI
+
+const app = express()
+mongoose.connect(url, { useNewUrlParser: true })
 const con = mongoose.connection
-con.on('open',() => {
-    console.log('Connected............')
+con.on('open', () => {
+    console.log('Connected to db!')
 })
 app.use(express.json())
 app.use(cors());
 const employeesRouter = require('./routes/employees')
-app.use('/employees',employeesRouter)
-app.listen(9000,() => {
-    console.log("Server is started.......")
+app.use('/employees', employeesRouter)
+app.listen(9000, () => {
+    console.log("Server is started at localhost:9000")
 })
