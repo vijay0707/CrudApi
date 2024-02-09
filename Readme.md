@@ -29,7 +29,7 @@ Before you begin, ensure you have met the following requirements:
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/dprakash2101/CrudJS.git
+git clone https://github.com/vijay0707/CrudApi.git
 
 ```
 2. Usage
