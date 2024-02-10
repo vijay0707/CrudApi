@@ -6,7 +6,7 @@ const mangoose = require('mongoose')
 dotenv.config()
 
 const url = process.env.MONGO_URI
-
+const PORT = 9000;
 const app = express()
 mongoose.connect(url, { useNewUrlParser: true })
 const con = mongoose.connection
@@ -17,6 +17,8 @@ app.use(express.json())
 app.use(cors());
 const employeesRouter = require('./routes/employees')
 app.use('/employees', employeesRouter)
-app.listen(9000, () => {
-    console.log("Server is started at localhost:9000")
+app.listen(PORT, () => {
+    console.log(`Server is started at localhost:${PORT}`)
 })
+
+module.exports = app;

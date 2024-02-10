@@ -4,7 +4,9 @@
   "description": "Crud application for employee details using Node Js and Mongo DB.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js"
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "jest --testTimeout=5000 --no-cache --forceExit"
   },
   "repository": {
     "type": "git",
